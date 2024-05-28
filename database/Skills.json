@@ -34,26 +34,13 @@
     "subtitle": "Insights",
     "description": "I specialize in enhancing website performance, ensuring fast loading times and efficient resource utilization for an optimal user experience."
   },
-  {
-    "icon": "IconA11Y",
-    "image": "/icon/icon-a11y.svg",
-    "title": "A11Y",
-    "subtitle": "Web Accessibility",
-    "description": "Accessibility is a must. I ensure everyone can use what I create, focusing on keyboard navigation and screen reader compatibility."
-  },
-  {
-    "icon": "IconFigma",
-    "image": "/icon/icon-figma.svg",
-    "title": "Design",
-    "subtitle": "Figma & Photoshop",
-    "description": "While not a full-time UI designer, I have an eye for aesthetics, creating visually appealing and user-friendly interfaces."
-  },
+
   {
     "icon": "IconWebpack",
-    "image": "/icon/icon-webpack.svg",
+    "image": "/icon/gulp-logo.svg",
     "title": "Development Env.",
-    "subtitle": "Webpack",
-    "description": "I use tools like Webpack, Vite, Parcel, or Gulp to streamline workflows, automating development for efficiency."
+    "subtitle": "Gulp",
+    "description": "Gulp is a command-line task runner for Node. js. Gulp let us automate processes and run repetitive tasks with ease."
   },
   {
     "icon": "IconAPI",

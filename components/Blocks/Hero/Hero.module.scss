@@ -1,4 +1,4 @@
-@import '/assets/media-queries.scss';
+@import "/assets/media-queries.scss";
 
 .hero {
   position: relative;
@@ -13,8 +13,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
-    padding: calc(var(--header-height) + (var(--x-spacing) / 2)) var(--x-spacing) calc(var(--x-spacing) * 2);
-
+    padding: 10vh 0 0;
     text-align: center;
   }
 }
@@ -29,7 +28,7 @@
     margin: calc(-1 * 4rem) 0;
     padding: 2rem 0;
     &:nth-child(2) {
-      .splitWords{
+      .splitWords {
         background: -webkit-linear-gradient(hsl(var(--color-white)), hsl(200, 60, 82));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -93,7 +92,7 @@
     }
   }
 
-  p{
+  p {
     font-size: var(--fs-md);
     font-weight: var(--fw-light);
     color: hsl(var(--color-white));
@@ -126,7 +125,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: url('/noise.png') repeat;
+    background: url("/noise.png") repeat;
     pointer-events: none;
   }
 
@@ -154,7 +153,7 @@
 .fakeContainer {
   position: absolute;
   inset: 0;
-  opacity: .5;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
   pointer-events: none;

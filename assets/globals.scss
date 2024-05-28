@@ -1,11 +1,10 @@
-
-@import 'media-queries.scss';
+@import "media-queries.scss";
 //////////////////////////////
 // THEMING
 //////////////////////////////
 :root {
-  --font-alt: 'Libre Baskerville', serif;
-  --font-primary: 'Manrope', sans-serif;
+  --font-alt: "Libre Baskerville", serif;
+  --font-primary: "Manrope", sans-serif;
 
   --color-bg: 210, 75%, 98%; //#F8FBFE; Off White
   --color-bg-alt: 240, 10%, 5%; //#121216 Smoke;
@@ -25,10 +24,10 @@
   --fs-ms: 1.2rem;
   --fs-xxs: 1.6rem;
   --fs-xs: 1.8rem;
-  --fs-sm: 2.0rem;
+  --fs-sm: 2rem;
   --fs-md: 2.6rem;
   --fs-lg: 4.8rem;
-  --fs-xl: 7.0rem;
+  --fs-xl: 7rem;
   --fs-xml: 12rem;
   --fs-xxl: 16rem;
 
@@ -44,7 +43,6 @@
   @media (max-width: 1366px) and (max-height: 820px) {
     --header-height: 18rem;
   }
-
 
   @include respond-below(xml) {
     --fs-xml: 10rem;
@@ -72,20 +70,20 @@
   @include respond-below(sm) {
     --fs-md: 1.8rem;
     --fs-xml: 5rem;
-    --fs-xl: 4.0rem;
+    --fs-xl: 4rem;
     --x-spacing: 3rem;
     --header-height: 14rem;
   }
-
 }
-
 
 //////////////////////////////
 // CSS RESET
 //////////////////////////////
 
 /* Box sizing rules */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -104,7 +102,8 @@ html {
 }
 
 /* Remove list styles on ul and ol */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -119,7 +118,13 @@ body {
 }
 
 /* Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -137,7 +142,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -147,7 +155,8 @@ input, button, textarea, select {
 }
 
 /* Create a root stacking context */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -156,15 +165,14 @@ input, button, textarea, select {
   background: hsl(var(--color-primary));
 }
 
-main{
+main {
   min-height: 100vh;
 }
-
 
 //////////////////////////////
 // GLOBAL STYLES
 //////////////////////////////
-p{
+p {
   font-weight: var(--fw-regular);
 }
 
@@ -194,7 +202,6 @@ p{
   }
 }
 
-
 // Lenis Styles
 .lenis.lenis-smooth {
   scroll-behavior: auto;
@@ -210,7 +217,7 @@ p{
 }
 
 // 404
-.notFound{
+.notFound {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -219,16 +226,34 @@ p{
   padding: 3rem;
   color: hsl(var(--color-white));
   text-align: center;
-  h1.notFoundTitle{
+  h1.notFoundTitle {
     font-size: var(--fs-xl);
   }
-  h2.notFoundTitle{
+  h2.notFoundTitle {
     font-size: var(--fs-md);
   }
-  p{
+  p {
     font-size: var(--fs-sm);
-    color: hsla(var(--color-white), .7);
+    color: hsla(var(--color-white), 0.7);
     margin-bottom: 6rem;
     margin-top: 3rem;
+  }
+}
+.web-logo {
+  animation-name: round;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
